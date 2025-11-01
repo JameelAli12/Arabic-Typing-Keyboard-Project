@@ -73,3 +73,16 @@ h1 {
     gap: 10px;
 }
 
+.text {
+    background-color: black;
+    border: 0.1px solid gray;
+    color: rgb(0, 255, 0);
+    width: 80%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 200px;
+    font-size: 28px;
+}
+

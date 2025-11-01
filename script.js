@@ -1,4 +1,9 @@
 window.addEventListener("keydown", e => {
+    if(!localStorage.getItem("fontAlertShown")) {
+        alert("Please use Arabic font for better experience!")
+        localStorage.setItem("fontAlertShown", "true");
+    }
+    
     const audio = document.querySelector(`audio[data-key = "${e.keyCode}"]`)
     const key = document.querySelector(`.key[data-key = "${e.keyCode}"]`)
     if(!audio) return;
